@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require_relative '../lib/fibonacci_odd_sums.rb'
+
+FibonacciOddSums::FibonacciSequence.new
