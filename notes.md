@@ -1,0 +1,1 @@
+if i create an array, then extract the odd numbers, then add those nmbers that should work

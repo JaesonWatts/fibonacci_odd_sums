@@ -20,6 +20,12 @@ module FibonacciOddSums
       end
     end
 
+    def sum_the_odds
+      @sequence_array.map do |num1, num2| 
+      
+      end
+    end
+
 
   end
   
