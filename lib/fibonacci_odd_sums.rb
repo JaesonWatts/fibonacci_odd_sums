@@ -1,11 +1,11 @@
 require "./lib/fibonacci_odd_sums/version"
 
 module FibonacciOddSums
+  class Error < StandardError; end
 
   class FibonacciSequence
 
     def initialize  
-      system('clear')
       @sequence_array = [0,1]
       @odds_array = []
       self.generate
@@ -34,12 +34,11 @@ module FibonacciOddSums
 
     def sum_the_odds
       @odd_sum = @odds_array.inject(0){|sum,x| sum = sum +x}
+      p 'Solution of the sum of the odd numbers in the Fibonacci Sequence under 10,000'
       p @odd_sum
     end
     
   end
-  
-
-  class Error < StandardError; end
-  # Your code goes here...
 end
+
+FibonacciOddSums::FibonacciSequence.new
